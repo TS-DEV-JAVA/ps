@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PS-Converter Documentation</title>
+  <style>
+    body {
+      background-color: #d0d0d0; /* classic gray */
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      color: black;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      background-color: #0017ff;
+      color: white;
+      padding: 10px;
+      font-size: 24px;
+      border: 2px solid black;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .top-bar {
+      background-color: #c0c0c0;
+      padding: 10px;
+      border: 2px inset #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .vista-button {
+      background-color: #e0e0e0;
+      border: 2px outset #ffffff;
+      padding: 8px 18px;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 2px 2px 0px #888;
+      cursor: pointer;
+    }
+
+    .vista-button:hover {
+      background-color: #d0d0d0;
+    }
+
+    .email-link {
+      font-size: 13px;
+    }
+
+    .description-box {
+      background-color: #ffffff;
+      border: 2px groove #888;
+      padding: 15px;
+      font-size: 14px;
+      white-space: pre-wrap;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 30px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PS-Converter Documentation</h1>
+
+  <div class="top-bar">
+    <form action="https://ts-dev-java.github.io/Pspwebsite/1.html" method="get" style="margin: 0;">
+      <input type="submit" class="vista-button" value="Go To Main Site">
+    </form>
+    <div class="email-link">
+      💬 Contact: <a href="mailto:ps.converter.buisness.ts@gmail.com">ps.converter.buisness.ts@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="description-box">
+    <!-- Paste your full long description here -->
+    <b>PS-Converter: A Complete Video Conversion Tool for the PSP and PS Vita</b>
+
+    PS-Converter: A Complete Video Conversion Tool for the PSP and PS Vita
+Introduction
+In an era dominated by ultra-high-definition displays, cloud streaming, and mobile-first media consumption, it’s easy to forget that not so long ago, watching videos on the go meant carrying around a dedicated device — and for many, that device was the Sony PlayStation Portable (PSP) or its successor, the PlayStation Vita. These handheld systems were revolutionary at the time, combining portable gaming with robust multimedia capabilities, allowing users to watch videos, listen to music, and even browse the web.
+
+However, time has marched on. Media formats have evolved. MP4 files now support resolutions and compression techniques that were unimaginable in the PSP’s prime. As a result, modern MP4 files — whether downloaded, recorded, or streamed — are almost never compatible with these older consoles. The average video today is far too large in resolution, bitrate, or codec complexity to be recognized or played by the PSP or even the slightly more capable PS Vita.
+
+That’s where PS-Converter comes in.
+
+PS-Converter is a terminal-based utility built for one purpose: to convert modern MP4 video files into formats that are fully compatible with the PSP (368x208 resolution) and the PS Vita. It is designed to be lightweight, efficient, easy to use, and completely focused on this singular goal. It does not try to be a general-purpose converter. It does not try to support every file type. Instead, it excels at converting MP4 videos into a perfectly optimized format for these specific consoles — no more, no less.
+
+This documentation will walk you through every detail of the PS-Converter: what it does, why it exists, how to use it, what makes it unique, and why it's the best solution available for retro handheld video conversion.
+
+Purpose and Vision
+The main purpose of PS-Converter is to serve retro gaming and multimedia preservation communities. These groups often hold onto their PSPs and PS Vitas not just for nostalgia, but for their lasting utility. Even today, these devices are beloved for their compact form factors, wide homebrew support, and excellent media players (within their limits). However, without an easy way to convert videos to a compatible format, most users are unable to enjoy watching modern content on these devices.
+
+PS-Converter bridges that gap.
+
+The vision behind PS-Converter is not to reinvent the wheel, but to offer a refined and focused experience. Too many general-purpose video converters exist with overly complex interfaces, bloated settings menus, or confusing export profiles. For users who just want to get a video onto their PSP or Vita quickly and painlessly, those tools are simply overkill.
+
+PS-Converter removes the noise, cuts through the confusion, and gives users a straightforward process: input your MP4 file, click "Start", and receive a perfectly converted video ready to be transferred and played on your device.
+
+Key Features
+PSP-Compatible Conversion
+
+Converts MP4 videos into the exact specifications required by the PSP: 368x208 resolution, compatible codecs, container format, and bitrate.
+
+Ensures full playback compatibility without glitches, corrupted files, or black screens.
+
+Ideal for movies, episodes, personal recordings, and short clips.
+
+PS Vita Support
+
+Supports resolution and bitrate profiles compatible with PS Vita playback (higher than PSP but still optimized).
+
+Uses adjusted encoding settings to ensure proper performance and battery efficiency.
+
+Terminal-Based Simplicity
+
+No installation required. No GUI. No unnecessary dependencies.
+
+Just run the included Start file, and the terminal interface guides you through the conversion process.
+
+Lightweight and Fast
+
+Built with efficiency in mind, using the powerful FFmpeg backend under the hood.
+
+Runs quickly on most Windows systems without taking up more than a few megabytes of space.
+
+Converts even large videos in a matter of minutes depending on system specs.
+
+One-Click Start
+
+The included Start file eliminates the need to launch a terminal manually.
+
+Automatically configures the environment and initiates the script, making it friendly even to those unfamiliar with command-line tools.
+
+Accurate Video Scaling
+
+Automatically downscales 720p, 1080p, or higher-resolution videos to exactly 368x208 (PSP) or other Vita-safe formats while preserving the aspect ratio.
+
+Crops or adds padding where necessary to prevent distortion or stretching.
+
+No Internet Required
+
+Entirely offline. No online converters. No API keys. No tracking.
+
+Once downloaded, it works even in air-gapped systems or on retro setups with no web access.
+
+How It Works
+Once you double-click the Start file, the terminal window will open and prompt you to select an MP4 file from your local system. The script will then analyze the file, extract its metadata, and prepare it for conversion. Depending on the target profile — PSP or PS Vita — it will apply the correct encoding options and use FFmpeg to process the video.
+
+Here’s a breakdown of what happens behind the scenes:
+
+Input Detection: Confirms that the file is a valid MP4 and can be processed.
+
+Target Profile Selection: Automatically defaults to PSP mode but can be adjusted to Vita (in extended versions).
+
+Conversion Pipeline:
+
+Resizes the video to the target resolution (e.g., 368x208 for PSP).
+
+Converts the audio track to a supported format (AAC LC).
+
+Re-encodes using MPEG-4 SP (Simple Profile) or H.264 Baseline, depending on device compatibility.
+
+Writes to a container format (typically .mp4) that the console’s media player can recognize.
+
+Output Handling: Saves the file in a designated folder (like /Output) or next to the source file.
+
+The entire process is clearly explained in the terminal window with progress indicators, success confirmation, and optional file transfer tips.
+
+Why Use PS-Converter Over Other Tools?
+There are plenty of video converters out there, but very few offer precise support for the PSP and PS Vita. Many “general” converters:
+
+Fail to set the exact resolution and aspect ratio.
+
+Use modern codecs (like H.265) that are unsupported by these older devices.
+
+Produce output files too large for PSP memory sticks.
+
+Require deep customization or scripting knowledge.
+
+PS-Converter avoids all of these pitfalls. It's pre-configured to just work.
+
+Furthermore, PS-Converter is portable, meaning it doesn’t leave a footprint on your system. No installers. No registry edits. No hidden files or network calls.
+
+If you’re part of the modding, homebrew, or retro community, you know the value of tools that just do what they’re supposed to. PS-Converter delivers exactly that: focused functionality, high reliability, and zero bloat.
+
+Use Cases
+Personal Media Playback: Convert modern videos to watch while commuting, traveling, or relaxing — directly on your PSP or PS Vita.
+
+Retro Preservation Projects: Archive your video content in formats that are playable on vintage devices for future-proof viewing.
+
+Homebrew Distributions: Package converted videos with fan games, mods, or scene releases as compatible media.
+
+Custom Launchers or Skins: Embed converted intro videos into homebrew PSP/Vita menus or startup animations.
+
+Offline Entertainment for Kids: Create a portable media library for younger users using a durable PSP device with converted MP4 videos.
+
+Technical Specifications
+Input Format: MP4 (with most modern codecs and resolutions)
+
+Output Format: MP4 (with strict PSP/Vita-compatible settings)
+
+PSP Resolution: 368x208 (hard-coded for maximum compatibility)
+
+Audio: AAC (Low Complexity)
+
+Video Codec: MPEG-4 SP (PSP) or H.264 Baseline (Vita)
+
+Terminal UI: Windows Command Prompt (auto-launched by Start file)
+
+Dependencies: FFmpeg (included or pre-packaged in the "needs" folder)
+
+Runtime Requirements: Windows 7 or later with support for batch or PowerShell (varies based on your version)
+
+Installation and Setup
+There is no formal installation process. Simply extract the PS-Converter folder and double-click the Start file. All required files (such as FFmpeg or presets) are included in a folder typically named needs. The script is fully self-contained and does not require any administrator access or elevated privileges.
+
+You can also place video files in the root folder to simplify file selection.
+
+Frequently Asked Questions
+Q: Can I convert videos other than MP4?
+Not in the current version. PS-Converter focuses strictly on MP4 input to keep things stable and consistent. For other formats, you should first convert them to MP4 using a general-purpose tool, then run them through PS-Converter.
+
+Q: What if the output video has no sound or fails to play?
+This usually means the input file had an incompatible audio track. Make sure your MP4 has a standard AAC audio stream. If needed, use HandBrake or another tool to re-encode before using PS-Converter.
+
+Q: Can I customize the output resolution?
+Not in the standard version. PSP video playback is very sensitive to resolution mismatches. PS-Converter enforces 368x208 for maximum compatibility. For Vita, you may modify the script or request an extended version.
+
+Q: Will this work on macOS or Linux?
+Currently, the script is designed for Windows. However, the logic can be ported to Bash or Python for Unix systems if needed.
+
+Conclusion
+PS-Converter isn’t trying to do everything. It does one thing — convert modern MP4 videos into PSP and PS Vita compatible formats — and it does it exceptionally well. With a simple interface, zero installation, and precise conversion settings, it’s the perfect utility for retro handheld owners who want to bring their favorite videos into the palm of their hands, exactly like the early 2000s intended.
+
+In a world full of overloaded tools and overwhelming interfaces, PS-Converter stands out as a minimal, practical, and perfectly targeted solution for a very specific but highly valuable use case.
+
+So if you’ve been holding onto your PSP or PS Vita and wish you could load it up with videos from your PC, now you can — just run the Start file, convert, and enjoy..
+  </div>
+
+  <div class="footer">
+    © 1998–2025 PS-Converter Team. All rights reserved.
+  </div>
+
+</body>
+</html>
